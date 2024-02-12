@@ -3,7 +3,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #333;
+    background-color: #bd0909;
     color: #fff;
     padding: 10px;
     text-decoration: none;
@@ -53,14 +53,14 @@ nav ul li a {
     color: #000000;
     text-decoration: none;
 }
-nav ul li a.current {
+.active {
     text-decoration: underline;
     font-weight: bold;
-    color: #cc5500;
+    color: #ffffff;
     background-color: #00ff00;
 }
-nav ul li a.current:hover {
-    color: #cc5500; 
+.active:hover {
+    color: #ffffff; 
     border-bottom-color: #cc5500; 
 }
 nav ul li a:hover {
