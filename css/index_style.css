@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     a.skip-to-content {
         display: none;
     }
@@ -49,13 +49,6 @@ nav ul li {
     display: inline;
     margin-right: 10px;
 }
-
-nav ul li a {
-    color: #000000;
-    text-decoration: none;
-    font-size: 16px; 
-    font-family: Arial, sans-serif;
-}
 .active {
     text-decoration: underline;
     font-weight: bold;
@@ -72,6 +65,13 @@ nav ul li a:hover {
     color: #ffffff; 
     border-bottom-color: #cc5500; 
 }
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 16px; 
+    
+}
+
 main {
     padding: 20px;
 }
