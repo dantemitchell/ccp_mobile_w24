@@ -1,5 +1,9 @@
-
-.skip-to-content {
+@media (max-width: 768px) {
+    a.skip-to-content {
+        display: none;
+    }
+    
+a.skip-to-content {
     position: absolute;
     top: 0;
     left: 0;
@@ -11,18 +15,15 @@
 }
 
 
-.skip-to-content:focus {
+a.skip-to-content:focus {
     outline: 2px solid transparent;
 }
 
 
-.skip-to-content:focus {
+a.skip-to-content:focus {
     display: initial;
 }
-@media (max-width: 768px) {
-    .skip-to-content {
-        display: none;
-    }
+
 }
 body {
     font-family: Arial, sans-serif; 
@@ -52,21 +53,25 @@ nav ul li {
 nav ul li a {
     color: #000000;
     text-decoration: none;
+    font-size: 16px; 
+    font-family: Arial, sans-serif;
 }
 .active {
     text-decoration: underline;
     font-weight: bold;
     color: #ffffff;
     background-color: #00ff00;
+    font-size: 20px; 
+    font-family: "Times New Roman", Times, serif;
+}
+
+nav ul li a:hover {
+    color: #cc5500; 
 }
 .active:hover {
     color: #ffffff; 
     border-bottom-color: #cc5500; 
 }
-nav ul li a:hover {
-    color: #cc5500; 
-}
-
 main {
     padding: 20px;
 }
