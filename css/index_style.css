@@ -1,9 +1,9 @@
 @media (max-width: 600px) {
-    a.skip-to-content {
+    .skip-to-content {
         display: none;
     }
     
-a.skip-to-content {
+.skip-to-content {
     position: absolute;
     top: 0;
     left: 0;
@@ -14,17 +14,18 @@ a.skip-to-content {
     display: none;
 }
 
-
-a.skip-to-content:focus {
+.skip-to-content:focus {
+    display: initial;
+}
+.skip-to-content:focus {
     outline: 2px solid transparent;
 }
 
 
-a.skip-to-content:focus {
-    display: initial;
-}
+
 
 }
+
 body {
     font-family: Arial, sans-serif; 
     margin: 0;
