@@ -5,7 +5,7 @@
     }
     
 a.skip-to-content {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     background-color: #bd0909;
@@ -15,21 +15,16 @@ a.skip-to-content {
     display: none;
 }
 
-
+a.skip-to-content:focus {
+    display: initial;
+}
 a.skip-to-content:focus {
     outline: 2px solid transparent;
 }
 
 
-a.skip-to-content:focus {
-    display: initial;
-}
 
-}
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
 }
 body {
     margin: 0;
@@ -44,6 +39,11 @@ header {
     padding: 10px;
     text-align: center;
 }
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
 nav ul li {
     display: inline;
     margin-right: 10px;
