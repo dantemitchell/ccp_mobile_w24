@@ -29,6 +29,21 @@ nav ul li a.current {
     text-decoration: underline;
 }
 
+.skip-link {
+    position: absolute;
+    top: -40px; /* Hide the link initially */
+    left: 0;
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    text-decoration: none;
+    transition: top 0.3s ease;
+}
+
+.skip-link:focus {
+    top: 0; /* Show the link when it has focus */
+}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
