@@ -29,20 +29,28 @@ nav ul li a {
 nav ul li a.current {
     text-decoration: underline;
 }
-
-.skip-link {
-    position: absolute;
-    top: -40px; /* Hide the link initially */
-    left: 0;
-    background-color: #000;
-    color: #fff;
-    padding: 5px;
-    text-decoration: none;
-    transition: top 0.3s ease;
+nav ul li a.current:hover {
+    color: #cc5500; /* Change text color on hover */
+    border-bottom-color: #cc5500; /* Change border color on hover */
 }
 
-.skip-link:focus {
-    top: 0; /* Show the link when it has focus */
+/* CSS for mobile view */
+@media (max-width: 768px) {
+    .skip-to-content {
+        display: none;
+    }
+}
+
+.skip-to-content:focus + #main-content {
+    /* Adjust scroll-behavior as needed */
+    scroll-behavior: smooth;
+    /* Adjust scroll offset as needed */
+    padding-top: 50px;
+}
+
+/* Ensure focus indicator for skip link */
+.skip-to-content:focus {
+    outline: 2px solid transparent;
 }
 
 .grid {

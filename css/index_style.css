@@ -1,14 +1,42 @@
-.skip-link {
-    position: absolute;
-    top: -40px; /* Hide the link initially */
-    left: 0;
-    background-color: #000;
-    color: #fff;
-    padding: 5px;
-    text-decoration: none;
-    transition: top 0.3s ease;
+nav ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-.skip-link:focus {
-    top: 0; /* Show the link when it has focus */
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a.current {
+    text-decoration: underline;
+    font-weight: bold
+}
+nav ul li a.current:hover {
+    color: #cc5500; 
+    border-bottom-color: #cc5500; 
+}
+
+
+@media (max-width: 768px) {
+    .skip-to-content {
+        display: none;
+    }
+}
+
+.skip-to-content:focus + #main-content {
+    
+    scroll-behavior: smooth;
+   
+    padding-top: 50px;
+}
+
+
+.skip-to-content:focus {
+    outline: 2px solid transparent;
 }
