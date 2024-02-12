@@ -1,3 +1,21 @@
+/* CSS for mobile view */
+@media (max-width: 768px) {
+    .skip-to-content {
+        display: none;
+    }
+}
+
+.skip-to-content:focus + #main-content {
+    /* Adjust scroll-behavior as needed */
+    scroll-behavior: smooth;
+    /* Adjust scroll offset as needed */
+    padding-top: 50px;
+}
+
+/* Ensure focus indicator for skip link */
+.skip-to-content:focus {
+    outline: 2px solid transparent;
+}
 body {
     margin: 0;
     padding: 0;
@@ -34,24 +52,6 @@ nav ul li a.current:hover {
     border-bottom-color: #cc5500; /* Change border color on hover */
 }
 
-/* CSS for mobile view */
-@media (max-width: 768px) {
-    .skip-to-content {
-        display: none;
-    }
-}
-
-.skip-to-content:focus + #main-content {
-    /* Adjust scroll-behavior as needed */
-    scroll-behavior: smooth;
-    /* Adjust scroll offset as needed */
-    padding-top: 50px;
-}
-
-/* Ensure focus indicator for skip link */
-.skip-to-content:focus {
-    outline: 2px solid transparent;
-}
 
 .grid {
     display: grid;

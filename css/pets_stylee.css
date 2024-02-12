@@ -1,4 +1,21 @@
 
+@media (max-width: 768px) {
+    .skip-to-content {
+        display: none;
+    }
+}
+
+.skip-to-content:focus + #main-content {
+    
+    scroll-behavior: smooth;
+    
+    padding-top: 50px;
+}
+
+
+.skip-to-content:focus {
+    outline: 2px solid transparent;
+}
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -23,20 +40,3 @@ nav ul li a.current:hover {
     border-bottom-color: #cc5500; 
 }
 
-@media (max-width: 768px) {
-    .skip-to-content {
-        display: none;
-    }
-}
-
-.skip-to-content:focus + #main-content {
-    
-    scroll-behavior: smooth;
-    
-    padding-top: 50px;
-}
-
-
-.skip-to-content:focus {
-    outline: 2px solid transparent;
-}
